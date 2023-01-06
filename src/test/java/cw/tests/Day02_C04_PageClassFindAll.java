@@ -11,5 +11,6 @@ public class Day02_C04_PageClassFindAll {
 
         SauceDemoLoginPage lp = new SauceDemoLoginPage();
         Assert.assertEquals(3, lp.inputElements.size());
+        Driver.closeDriver();
     }
 }
