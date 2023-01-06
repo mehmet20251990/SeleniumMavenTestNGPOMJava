@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class Day02_C01_PageClass {
     /*
   Navigate to https://www.saucedemo.com/
-  Enter the user name as standard_user
+  Enter the username as standard_user
   Enter the password as secret_sauce
   Click on login button.
   - Choose price low to high with soft Assert.
@@ -46,6 +46,7 @@ public class Day02_C01_PageClass {
                 .map(x -> x.getText().substring(1))
                 .map(x -> Double.parseDouble(x))
                 .collect(Collectors.toList());
+
         for (int i = 0; i < urunFiyatlari.size()-1; i++) {
             Assert.assertTrue(urunFiyatlari.get(i) <= urunFiyatlari.get(i+1));
         }

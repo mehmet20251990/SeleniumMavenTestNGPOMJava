@@ -16,9 +16,7 @@ public class Day02_C02_PageClass {
         SauceDemoLoginPage loginPage = new SauceDemoLoginPage();
 
         loginPage.txtUsername.sendKeys("standard_user");
-
         loginPage.txtPassword.sendKeys("secret_sauce");
-
         loginPage.btnLogin.click();
 
         //Burada homepage e gecis yaptigimizdan dolayi homepage classimizdan bir obje uretiriz

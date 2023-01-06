@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import java.time.Duration;
-public class Day02_C03_OPTIONALPageClassV2 {
+public class Day02_C05_OPTIONALPageClassV2 {
     @Test
     public void test(){
         WebDriverManager.chromedriver().setup();

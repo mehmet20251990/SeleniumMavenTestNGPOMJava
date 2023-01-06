@@ -22,13 +22,11 @@ public class SauceDemoLoginPage {
     public WebElement btnLogin;
 
     //Örnek olması açısından @FindAll anotation kullanımı gösterimi...PageClass'tan bağımsızdır...
-    @FindAll(
-            {
+    @FindAll({
                     @FindBy(id = "user-name"),
                     @FindBy(id = "password"),
                     @FindBy(xpath = "//*[@id='login-button']")
-            }
-    )
+            })
     public List<WebElement> inputElements;
 }
 
