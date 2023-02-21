@@ -13,14 +13,12 @@ public class Day02_C05_OPTIONALPageClassV2 {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         driver.get("https://www.amazon.com.tr/");
 
         // Driver objemiz static degil ise bu driver objemizi page class imizda kullanmak adina constructor kullaniriz
         AmazonHomePageV1 homePage = new AmazonHomePageV1(driver);
 
         //homePage.searchFor("modem");
-
         homePage.navigateToOrders();
     }
 }

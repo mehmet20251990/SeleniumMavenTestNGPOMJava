@@ -4,7 +4,6 @@ import cw.utilities.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 public class Day01_C01_DriverExample {
     /*
     Go to URL: https://opensource-demo.orangehrmlive.com/
@@ -22,7 +21,6 @@ public class Day01_C01_DriverExample {
     @Test
     public void test02(){
         WebDriver driver = Driver.getDriver();
-
         driver.get("https://opensource-demo.orangehrmlive.com/");
         String title = driver.getTitle();
 
