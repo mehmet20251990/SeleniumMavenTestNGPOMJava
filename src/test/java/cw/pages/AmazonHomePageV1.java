@@ -28,7 +28,6 @@ public class AmazonHomePageV1 {
         Actions actions = new Actions(ldriver);
         actions.moveToElement(accountAndList)
                 .perform();
-
         WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(orders)).click();
     }
